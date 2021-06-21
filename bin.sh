@@ -24,6 +24,7 @@ git clone https://github.com/binge8/luci-theme-argon-mc.git package/openwrt-pack
 #git clone https://github.com/tuanqing/install-program package/openwrt-packages/install-program
 #svn co https://github.com/0saga0/OpenClash/trunk/luci-app-openclash package/openwrt-packages/luci-app-openclash
 #svn co https://github.com/xiaoqingfengATGH/luci-theme-infinityfreedom/trunk/luci-theme-infinityfreedom package/openwrt-packages/luci-theme-infinityfreedom
+git clone https://github.com/fw876/helloworld feeds/helloworld
 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
