@@ -13,6 +13,7 @@ sed -i 's/OpenWrt/AutoBuildLean/g' package/base-files/files/bin/config_generate
 git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-packages/luci-app-passwall
 git clone https://github.com/NagaseKouichi/openwrt-chinadns-ng.git package/chinadns-ng
 git clone -b luci https://github.com/NagaseKouichi/openwrt-chinadns-ng.git package/luci-app-chinadns-ng
+git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
 #svn co https://github.com/siropboy/mypackages/trunk/luci-app-autopoweroff package/openwrt-packages/luci-app-autopoweroff
 svn co https://github.com/siropboy/mypackages/trunk/luci-app-control-timewol package/openwrt-packages/luci-app-control-timewol
 git clone https://github.com/tty228/luci-app-serverchan.git package/openwrt-packages/luci-app-serverchan
