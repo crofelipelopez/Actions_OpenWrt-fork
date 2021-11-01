@@ -10,8 +10,8 @@ sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_genera
 
 #添加额外软件包
 #git clone https://github.com/lisaac/luci-app-dockerman.git package/openwrt-packages/luci-app-dockerman
-git clone  https://github.com/fw876/helloworld package/openwrt-packages/luci-app-helloworld
-git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-packages/luci-app-passwall
+#git clone  https://github.com/fw876/helloworld package/openwrt-packages/luci-app-helloworld
+#git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-packages/luci-app-passwall
 git clone https://github.com/small-5/luci-app-adblock-plus package/openwrt-packages/luci-app-adblock-plus
 git clone https://github.com/NagaseKouichi/openwrt-chinadns-ng.git package/chinadns-ng
 git clone -b luci https://github.com/NagaseKouichi/openwrt-chinadns-ng.git package/luci-app-chinadns-ng
