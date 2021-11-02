@@ -15,7 +15,7 @@ sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_genera
 git clone https://github.com/small-5/luci-app-adblock-plus package/openwrt-packages/luci-app-adblock-plus
 #git clone https://github.com/NagaseKouichi/openwrt-chinadns-ng.git package/chinadns-ng
 #git clone -b luci https://github.com/NagaseKouichi/openwrt-chinadns-ng.git package/luci-app-chinadns-ng
-git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/luci-app-smartdns
+git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/openwrt-packages/luci-app-smartdns
 #svn co https://github.com/siropboy/mypackages/trunk/luci-app-autopoweroff package/openwrt-packages/luci-app-autopoweroff
 svn co https://github.com/siropboy/mypackages/trunk/luci-app-control-timewol package/openwrt-packages/luci-app-control-timewol
 git clone https://github.com/tty228/luci-app-serverchan.git package/openwrt-packages/luci-app-serverchan
