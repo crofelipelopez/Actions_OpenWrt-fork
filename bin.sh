@@ -4,10 +4,12 @@ sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_genera
 # 修改默认主题
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 #修改主机名
-#sed -i 's/OpenWrt/AutoBuildLean/g' package/base-files/files/bin/config_generate
+#sed -i 's/OpenWrt/AutoBuild/g' package/base-files/files/bin/config_generate
 #关闭自建私有源签名验证
 #sed -i '92d' package/system/opkg/Makefile
-
+#修改smartdns版本
+sed -i 's/192.168.1.1/d7d7ef48cd71f9c13358859d2c6137eae7462415/g' /feeds/packages/net/smartdns/Makefile
+sed -i 's/^PKG_MIRROR_HASH:=b4d825a48884101f647cd594f00b714a2d09ac419b958ee0317d302fd31b0038/#&/' /feeds/packages/net/smartdns/Makefile
 #添加额外软件包
 #git clone https://github.com/lisaac/luci-app-dockerman.git package/openwrt-packages/luci-app-dockerman
 #git clone  https://github.com/fw876/helloworld package/openwrt-packages/luci-app-helloworld
@@ -15,7 +17,7 @@ sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_genera
 git clone https://github.com/small-5/luci-app-adblock-plus package/openwrt-packages/luci-app-adblock-plus
 #git clone https://github.com/NagaseKouichi/openwrt-chinadns-ng.git package/chinadns-ng
 #git clone -b luci https://github.com/NagaseKouichi/openwrt-chinadns-ng.git package/luci-app-chinadns-ng
-git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/openwrt-packages/luci-app-smartdns
+#git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/openwrt-packages/luci-app-smartdns
 #svn co https://github.com/siropboy/mypackages/trunk/luci-app-autopoweroff package/openwrt-packages/luci-app-autopoweroff
 #git clone https://github.com/tty228/luci-app-serverchan.git package/openwrt-packages/luci-app-serverchan
 #git clone https://github.com/zzsj0928/luci-app-pushbot package/openwrt-packages/luci-app-pushbot
