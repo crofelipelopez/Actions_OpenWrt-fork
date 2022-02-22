@@ -8,8 +8,10 @@ sed -i 's/192.168.1.1/192.168.10.1/g' package/base-files/files/bin/config_genera
 #关闭自建私有源签名验证
 #sed -i '92d' package/system/opkg/Makefile
 #修改smartdns版本
-sed -i 's/192.168.1.1/d7d7ef48cd71f9c13358859d2c6137eae7462415/g' /feeds/packages/net/smartdns/Makefile
-sed -i 's/^PKG_MIRROR_HASH:=b4d825a48884101f647cd594f00b714a2d09ac419b958ee0317d302fd31b0038/#&/' /feeds/packages/net/smartdns/Makefile
+sed -i 's/1.2021.35/2022.02.17/g' feeds/packages/net/smartdns/Makefile
+sed -i 's/f50e4dd0813da9300580f7188e44ed72a27ae79c/d7d7ef48cd71f9c13358859d2c6137eae7462415/g' feeds/packages/net/smartdns/Makefile
+sed -i 's/^PKG_MIRROR_HASH:=b4d825a48884101f647cd594f00b714a2d09ac419b958ee0317d302fd31b0038/#&/' feeds/packages/net/smartdns/Makefile
+
 #添加额外软件包
 #git clone https://github.com/lisaac/luci-app-dockerman.git package/openwrt-packages/luci-app-dockerman
 #git clone  https://github.com/fw876/helloworld package/openwrt-packages/luci-app-helloworld
