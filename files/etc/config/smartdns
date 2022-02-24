@@ -1,0 +1,151 @@
+
+config smartdns
+	option server_name 'smartdns'
+	option tcp_server '1'
+	option ipv6_server '1'
+	option dualstack_ip_selection '1'
+	option prefetch_domain '1'
+	option serve_expired '0'
+	option redirect 'dnsmasq-upstream'
+	option seconddns_tcp_server '1'
+	option seconddns_no_rule_addr '0'
+	option seconddns_no_rule_nameserver '0'
+	option seconddns_no_rule_ipset '0'
+	option coredump '0'
+	option seconddns_no_dualstack_selection '1'
+	option force_aaaa_soa '1'
+	option rr_ttl_min '60'
+	option port '6666'
+	option rr_ttl_max '600'
+	option seconddns_no_speed_check '1'
+	option seconddns_no_rule_soa '1'
+	option seconddns_no_cache '1'
+	option cache_size '51200'
+	option seconddns_server_group 'oversea'
+	option enabled '1'
+	option seconddns_enabled '1'
+	option seconddns_port '5335'
+	list old_redirect 'dnsmasq-upstream'
+	list old_port '6666'
+	list old_enabled '1'
+
+config server
+	option enabled '1'
+	option name 'GoogleDns'
+	option ip '8.8.8.8'
+	option blacklist_ip '0'
+	option type 'tcp'
+	option server_group 'oversea'
+
+config server
+	option enabled '1'
+	option name 'GoogleDns2'
+	option ip '8.8.4.4'
+	option blacklist_ip '0'
+	option type 'tls'
+	option server_group 'oversea'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name '114'
+	option ip '114.114.114.114'
+	option server_group 'cn'
+	option blacklist_ip '0'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name 'Tencent'
+	option ip '119.29.29.29'
+	option server_group 'cn'
+	option blacklist_ip '0'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name 'Alibaba'
+	option ip '223.5.5.5'
+	option server_group 'cn'
+	option blacklist_ip '0'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name 'CQCMCC'
+	option ip '218.201.4.3'
+	option server_group 'cn'
+	option blacklist_ip '0'
+
+config server
+	option type 'udp'
+	option name 'CQCMCC2'
+	option ip '218.201.17.2'
+	option server_group 'cn'
+	option blacklist_ip '0'
+	option enabled '0'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name 'CQUNICOM'
+	option ip '221.7.92.98'
+	option server_group 'cn'
+	option blacklist_ip '0'
+
+config server
+	option type 'udp'
+	option name 'CQUNICOM2'
+	option ip '221.5.203.98'
+	option server_group 'cn'
+	option blacklist_ip '0'
+	option enabled '0'
+
+config server
+	option enabled '1'
+	option type 'udp'
+	option name 'CQTELNET'
+	option ip '61.128.128.68'
+	option server_group 'cn'
+	option blacklist_ip '0'
+
+config server
+	option type 'udp'
+	option name 'CQTELNET2'
+	option ip '61.128.192.68'
+	option server_group 'cn'
+	option blacklist_ip '0'
+	option enabled '0'
+
+config server
+	option enabled '1'
+	option ip 'https://dns.google/dns-query'
+	option type 'https'
+	option name 'GoogleDns3'
+	option server_group 'oversea'
+	option blacklist_ip '0'
+
+config server
+	option enabled '1'
+	option name 'OpenDNS'
+	option ip 'https://doh.opendns.com/dns-query'
+	option type 'https'
+	option server_group 'oversea'
+	option blacklist_ip '0'
+
+config server
+	option enabled '1'
+	option name 'OpenDNS1'
+	option ip '208.67.222.222'
+	option type 'tcp'
+	option server_group 'oversea'
+	option blacklist_ip '0'
+
+config server
+	option enabled '1'
+	option name 'OpenDNS2'
+	option ip '208.67.220.220'
+	option type 'tls'
+	option server_group 'oversea'
+	option blacklist_ip '0'
+
