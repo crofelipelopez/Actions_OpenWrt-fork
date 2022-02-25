@@ -1,6 +1,5 @@
 # Actions-OpenWrt  
-🚀 本仓库永久每天早上会编译出最新固件。    
-
+🚀 本仓库永久每天早上会编译出最新固件。➦主源码来自https://github.com/coolsnowwolf/lede
 
 ## 使用方法
 
