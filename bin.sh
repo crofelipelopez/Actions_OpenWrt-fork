@@ -44,6 +44,9 @@ echo "src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2" >> feeds
 #添加包含 helloword 的 feed 
 echo "src-git helloworld https://github.com/fw876/helloworld.git" >> feeds.conf.default
 
+#添加包含 smartdns 的 feed 
+echo "src-git smartdns https://github.com/pymumu/luci-app-smartdns.git" >> feeds.conf.default
+
 #更新和安装库 
 ./scripts/feeds update -a
 ./scripts/feeds install -a
