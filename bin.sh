@@ -40,6 +40,8 @@ git clone -b lede https://github.com/pymumu/luci-app-smartdns.git package/openwr
 
 #添加包含 passwall 的 feed 
 echo "src-git passwall https://github.com/xiaorouji/openwrt-passwall" >> feeds.conf.default
+echo "src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2" >> feeds.conf.default
+
 
 #更新和安装库 
 ./scripts/feeds update -a
