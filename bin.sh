@@ -49,7 +49,11 @@ echo "src-git helloworld https://github.com/fw876/helloworld.git" >> feeds.conf.
 ./scripts/feeds update -a
 ./scripts/feeds install -a
 
-#修改smartdns版本
+#升级smartdns版本
 sed -i 's/1.2021.35/2022.03.02/g' feeds/packages/net/smartdns/Makefile
 sed -i 's/f50e4dd0813da9300580f7188e44ed72a27ae79c/1fd18601e7d8ac88e8557682be7de3dc56e69105/g' feeds/packages/net/smartdns/Makefile
 sed -i 's/^PKG_MIRROR_HASH/#&/' feeds/packages/net/smartdns/Makefile
+
+#升级zerotier版本
+sed -i 's/=1.8.4/=1.8.6/g' feeds/packages/net/zerotier/Makefile
+sed -i 's/^PKG_HASH/#&/' feeds/packages/net/zerotier/Makefile
