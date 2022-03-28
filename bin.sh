@@ -49,5 +49,5 @@ echo "src-git passwall2 https://github.com/xiaorouji/openwrt-passwall2" >> feeds
 
 #修改smartdns版本
 sed -i 's/1.2021.35/2022.02.17/g' feeds/packages/net/smartdns/Makefile
-sed -i 's/f50e4dd0813da9300580f7188e44ed72a27ae79c/d7d7ef48cd71f9c13358859d2c6137eae7462415/g' feeds/packages/net/smartdns/Makefile
+sed -i 's/f50e4dd0813da9300580f7188e44ed72a27ae79c/1fd18601e7d8ac88e8557682be7de3dc56e69105/g' feeds/packages/net/smartdns/Makefile
 sed -i 's/^PKG_MIRROR_HASH:=b4d825a48884101f647cd594f00b714a2d09ac419b958ee0317d302fd31b0038/#&/' feeds/packages/net/smartdns/Makefile
