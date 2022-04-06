@@ -55,5 +55,5 @@ sed -i 's/f50e4dd0813da9300580f7188e44ed72a27ae79c/24661c2419a81e660b11a0e3d35a3
 sed -i 's/^PKG_MIRROR_HASH/#&/' feeds/packages/net/smartdns/Makefile
 
 #升级zerotier版本
-sed -i 's/=1.8.4/=1.8.7/g' feeds/packages/net/zerotier/Makefile
-sed -i 's/^PKG_HASH/#&/' feeds/packages/net/zerotier/Makefile
+#sed -i 's/=1.8.4/=1.8.7/g' feeds/packages/net/zerotier/Makefile
+#sed -i 's/^PKG_HASH/#&/' feeds/packages/net/zerotier/Makefile
