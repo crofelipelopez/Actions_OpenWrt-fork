@@ -13,6 +13,7 @@ sed -i 's/192.168.1.1/192.168.8.1/g' package/base-files/files/bin/config_generat
 #git clone https://github.com/lisaac/luci-app-dockerman.git package/openwrt-packages/luci-app-dockerman
 #git clone  https://github.com/fw876/helloworld package/openwrt-packages/luci-app-helloworld
 #git clone https://github.com/xiaorouji/openwrt-passwall.git package/openwrt-packages/luci-app-passwall
+svn co https://github.com/naoki66/luci-app-passwall  feeds/luci-app-passwall
 #git clone https://github.com/xiaorouji/openwrt-passwall2.git package/openwrt-packages/luci-app-passwall2
 #git clone https://github.com/NagaseKouichi/openwrt-chinadns-ng.git package/chinadns-ng
 #git clone -b luci https://github.com/NagaseKouichi/openwrt-chinadns-ng.git package/luci-app-chinadns-ng
