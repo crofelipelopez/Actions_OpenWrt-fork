@@ -81,6 +81,9 @@ jobs:
        uses: klever1988/cachewrtbuild@main
        with:
          ccache: 'true'
+         toolchain: 'true'
+         skip: 'true'
+         clean: 'false'
          prefix: ${{ github.workspace }}/openwrt
         
     - name: Load custom feeds
@@ -117,6 +120,7 @@ jobs:
         mkdir -p $GITHUB_WORKSPACE/openwrt/dl
         cp -r $GITHUB_WORKSPACE/library/* $GITHUB_WORKSPACE/openwrt/dl
         cd $GITHUB_WORKSPACE/openwrt
+        echo -e 'CONFIG_DEVEL=y\nCONFIG_CCACHE=y' >> .config
         make defconfig
         make download -j8
         find dl -size -1024c -exec ls -l {} \;
