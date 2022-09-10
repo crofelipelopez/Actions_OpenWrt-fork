@@ -4,7 +4,7 @@ sed -i 's/192.168.1.1/192.168.8.1/g' package/base-files/files/bin/config_generat
 # 修改默认主题
 #sed -i 's/luci-theme-bootstrap/luci-theme-argon/g' feeds/luci/collections/luci/Makefile
 #修改主机名
-#sed -i 's/OpenWrt/AutoBuild/g' package/base-files/files/bin/config_generate
+sed -i 's/OpenWrt/AutoBuild/g' package/base-files/files/bin/config_generate
 #关闭自建私有源签名验证
 #sed -i '92d' package/system/opkg/Makefile
 
@@ -51,9 +51,9 @@ echo "src-git helloworld https://github.com/fw876/helloworld.git" >> feeds.conf.
 ./scripts/feeds install -a
 
 #升级smartdns版本
-#sed -i 's/1.2021.35/2022.04.04/g' feeds/packages/net/smartdns/Makefile
-#sed -i 's/f50e4dd0813da9300580f7188e44ed72a27ae79c/24661c2419a81e660b11a0e3d35a3bc269cd4bfa/g' feeds/packages/net/smartdns/Makefile
-#sed -i 's/^PKG_MIRROR_HASH/#&/' feeds/packages/net/smartdns/Makefile
+sed -i 's/1.2021.35/37.2/g' feeds/packages/net/smartdns/Makefile
+sed -i 's/f50e4dd0813da9300580f7188e44ed72a27ae79c/64e5b326cc53df1fec680cfa28ceec5d8a36fcbc/g' feeds/packages/net/smartdns/Makefile
+sed -i 's/^PKG_MIRROR_HASH/#&/' feeds/packages/net/smartdns/Makefile
 
 #升级zerotier版本
 #sed -i 's/=1.8.4/=1.8.7/g' feeds/packages/net/zerotier/Makefile
