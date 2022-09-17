@@ -56,3 +56,4 @@ sed -i 's/f50e4dd0813da9300580f7188e44ed72a27ae79c/64e5b326cc53df1fec680cfa28cee
 sed -i 's/^PKG_MIRROR_HASH/#&/' feeds/packages/net/smartdns/Makefile
 
 
+
