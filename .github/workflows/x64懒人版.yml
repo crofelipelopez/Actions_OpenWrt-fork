@@ -9,8 +9,8 @@ on:
         description: 'lx64'
         required: false
         default: 'false'
-  schedule:
-    - cron: 30 20 * * *
+  #schedule:
+  #  - cron: 30 20 * * *
 
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
